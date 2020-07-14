@@ -3,7 +3,6 @@ require('dotenv').config()
 const db = require('./models/index.js');
 const routes = require('./routes');
 const path = require('path');
-const seeds = require('./seeds.js');
 const PORT = process.env.PORT || 8080;
 
 const app = express();
@@ -28,7 +27,6 @@ app.use('/', routes);
 // Sync sequelize models then start Express app
 // =============================================
 db.sequelize.sync().then(() => {
-  seeds.populateTables(db);
   app.listen(PORT, () => {
     console.log(`App listening on PORT ${PORT}`);
   });

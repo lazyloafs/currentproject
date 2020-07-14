@@ -8,7 +8,7 @@ router.use('/api', apiRoutes);
 router.get('/', (req, res) => {
   db.Games.findAll({}).then(function(data) {
     console.log('data', data)
-    res.render('index', { games: data })
+    res.render('index', { games1: data })
   });
 });
 
