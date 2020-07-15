@@ -31,7 +31,7 @@
           <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="schedules.html">Schedules</a>
+          <a class="nav-link" href="schedules.html">Schedule</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="scores.html">Scores</a>
@@ -66,119 +66,156 @@
 
   <br>
   <br>
-
 <div class="container-lg">
-<!--Search Input-->
-  <form >
-  <div class="form-row">
-    <!--Calendar-->
-    <div class="form-group col-md-4">
-      <label id="inputtitle" for="inputState">Calendar</label>
-      <select id="inputState" class="form-control">
-        <option selected>Month</option>
-        <option>October'19</option>
-        <option>November'19</option>
-        <option>December'19</option>
-        <option>January'20</option>
-        <option>February'20</option>
-        <option>March'20</option>
-        <option>April'20</option>
-      </select>
+  <div class="row">
+    <div class="col-4">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" id="tabletexttitle">Team</th>
+            <th scope="col" id="tabletexttitle">Q1</th>
+            <th scope="col" id="tabletexttitle">Q2</th>
+            <th scope="col" id="tabletexttitle">Q3</th>
+            <th scope="col" id="tabletexttitle">Q4</th>
+            <th scope="col" id="tabletexttitle">Final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="images/nets.png" id="teamimg" class="rounded-0" alt="Sheep">
+            </td>
+            <td>27</td>
+            <td>29</td>
+            <td>31</td>
+            <td>17</td>
+            <td id="final">104</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/lakers.png" id="teamimg" class="rounded-0" alt="Sheep">
+            </td>
+            <td>33</td>
+            <td>25</td>
+            <td>22</td>
+            <td>22</td>
+            <td id="final">102</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <!--Teams-->
-    <div class="form-group col-md-4">
-      <label id="inputtitle" for="inputState">Teams</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose</option>
-        <option>ATLANTIC</option>
-        <option>Boston Celtics</option>
-        <option>Brooklyn Nets</option>
-        <option>New York Knicks</option>
-        <option>Philadelphia 76ers</option>
-        <option>Toronto Raptors</option>
-        <option>--------------</option>
-        <option>CENTRAL</option>
-        <option>Chicago Bulls</option>
-        <option>Cleveland Cavaliers</option>
-        <option>Detroit Pistons</option>
-        <option>Indiana Pacers</option>
-        <option>Milwaukee Bucks</option>
-        <option>--------------</option>
-        <option>SOUTHEAST</option>
-        <option>Atlanta Hawks</option>
-        <option>Charlote Hornets</option>
-        <option>Miami Heat</option>
-        <option>Orlando Magic</option>
-        <option>Washington Wizards</option>
-        <option>--------------</option>
-        <option>NORTHWEST</option>
-        <option>Denver Nuggets</option>
-        <option>Minnesota Timberwolves</option>
-        <option>Oklahoma City Thunder</option>
-        <option>Portland Trail Blazers</option>
-        <option>Utah Jazz</option>
-        <option>--------------</option>
-        <option>PACIFIC</option>
-        <option>Golden State Warriors</option>
-        <option>LA Clippers</option>
-        <option>Los Angeles Lakers</option>
-        <option>Phoenix Suns</option>
-        <option>Sacramento Kings</option>    
-        <option>--------------</option>
-        <option>SOUTHWEST</option>
-        <option>Dallas Mavericks</option>
-        <option>Houstons Rockets</option>
-        <option>Memphins Grizzlies</option>
-        <option>New Orleans Pelicans</option>
-        <option>San Antonio Spurs</option>  
-      </select>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header">Let's Get Social</div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comment</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div>
+          <button id="submit-comment" class="btn btn-dark">Send</button>
+        </div>
+      </div>
     </div>
-    <!--Leagues-->
-    <div class="form-group col-md-4">
-      <label id="inputtitle" for="inputState">Leagues</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose</option>
-        <option>NBA</option>
-        <option>WNBA</option>
-      </select>
+    <div class="col-4 scroll">
+      <div class="card">
+        <div class="card-body">
+          <p>The NBA is closing in on signing off on a second “bubble” in Chicago for the eight teams that were not invited to play in Orlando, enabling mini-training camps and subsequent games against other clubs with a target date of September, sources tell ESPN's Jackie MacMullan
+            The NBA is closing in on signing off on a second “bubble” in Chicago for the eight teams that were not invited to play in Orlando, enabling mini-training camps and subsequent games against other clubs with a target date of September, sources tell ESPN's Jackie MacMullan
+            The NBA is closing in on signing off on a second “bubble” in Chicago for the eight teams that were not invited to play in Orlando, enabling mini-training camps and subsequent games against other clubs with a target date of September, sources tell ESPN's Jackie MacMullan
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</form>
+  </div>
+</div>
 
 <br>
+<hr>
+<br>
 
-<!--Table-->
-<table class="table table-striped">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col" id="tabletexttitle">Date</th>
-      <th scope="col" id="tabletexttitle">Time</th>
-      <th scope="col" id="tabletexttitle">Home</th>
-      <th scope="col" id="tabletexttitle">Away</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container-lg">
+  <div class="row">
+    <div class="col-4">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" id="tabletexttitle">Team</th>
+            <th scope="col" id="tabletexttitle">Q1</th>
+            <th scope="col" id="tabletexttitle">Q2</th>
+            <th scope="col" id="tabletexttitle">Q3</th>
+            <th scope="col" id="tabletexttitle">Q4</th>
+            <th scope="col" id="tabletexttitle">Final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="images/clippers.png" id="teamimg" class="rounded-0" alt="Sheep">
+            </td>
+            <td>35</td>
+            <td>41</td>
+            <td>35</td>
+            <td>20</td>
+            <td id="final">131</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/golden.png" id="teamimg" class="rounded-0" alt="Sheep">
+            </td>
+            <td>26</td>
+            <td>22</td>
+            <td>29</td>
+            <td>30</td>
+            <td id="final">107</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header">Let's Get Social</div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comment</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+          </div>
+          <button id="submit-comment" class="btn btn-dark">Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 scroll">
+      <div class="card">
+        <div class="card-body">
+          <p>The NBA is closing in on signing off on a second “bubble” in Chicago for the eight teams that were not invited to play in Orlando, enabling mini-training camps and subsequent games against other clubs with a target date of September, sources tell ESPN's Jackie MacMullan
+            The NBA is closing in on signing off on a second “bubble” in Chicago for the eight teams that were not invited to play in Orlando, enabling mini-training camps and subsequent games against other clubs with a target date of September, sources tell ESPN's Jackie MacMullan
+            The NBA is closing in on signing off on a second “bubble” in Chicago for the eight teams that were not invited to play in Orlando, enabling mini-training camps and subsequent games against other clubs with a target date of September, sources tell ESPN's Jackie MacMullan
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </div>
+
+<br>
+<br>
+
+<footer id="sticky-footer" class="py-3">
+  <div class="container text-center">
+    <small>Copyright &copy; Slam Dunk 2020</small>
+  </div>
+</footer>
+
+
 
 
     
