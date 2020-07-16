@@ -1,3 +1,5 @@
 const db = require("./models")
 
-const populateTables = function(db){}
+const populateTables = function(db){
+    
+}
