@@ -31,18 +31,18 @@ Object.keys(db).forEach(function(modelName) {
 });
 
 
-// Creates a "Chirp" model that matches up with DB
-var Chirp = sequelize.define("chirp", {
+// Creates a "comment" model that matches up with DB
+var comment = sequelize.define("comment", {
   author: Sequelize.STRING,
   body: Sequelize.STRING,
   created_at: Sequelize.DATE
 });
 
 // Syncs with DB
-Chirp.sync({ force: true });
+comment.sync({ force: true });
 
 // Makes the Chirp Model available for other files (will also create a table)
-module.exports = Chirp;
+module.exports = comment;
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
