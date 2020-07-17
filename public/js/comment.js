@@ -32,6 +32,10 @@ $("#submit-comment").on("click", function(event) {
     // Empty each input box by replacing the value with an empty string
     $("#user").val("");
     $("#comment-box").val("");
+
+
+
+
   });
   
   // When the page loads, grab all of our chirps

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-// const comment = require("../public/js/comment.js");
+const comment = require("../models/index.js");
 
 router.get('/', (req, res) => res.json('Sample API get endpoint'));
 
