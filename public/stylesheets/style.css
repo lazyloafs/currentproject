@@ -215,3 +215,8 @@ text-shadow: 3px 3px #1F467F;
   font-style: normal;
   font-size: 15px;
 }
+
+.container-fluid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
