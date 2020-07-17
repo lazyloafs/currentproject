@@ -41,7 +41,7 @@ var comment = sequelize.define("comment", {
 // Syncs with DB
 comment.sync({ force: true });
 
-// Makes the Chirp Model available for other files (will also create a table)
+// Makes the Comment Model available for other files (will also create a table)
 module.exports = comment;
 
 db.sequelize = sequelize;

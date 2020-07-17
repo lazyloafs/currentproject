@@ -1,7 +1,33 @@
 const router = require('express').Router();
 const comment = require("../models/index.js");
+const db = require('../models/index.js');
 
-router.get('/', (req, res) => res.json('Sample API get endpoint'));
+
+
+
+router.get('/', (req, res) => {
+  console.log("get /");
+  db.Games.findAll({}).then(function(data) {
+    console.log('data', data)
+    res.render('index', { games: data })
+  });
+});
+
+router.get('/schedules', (req, res) => {
+  console.log("get /");
+  db.Games.findAll({}).then(function(data) {
+    console.log('data', data)
+    res.render('schedules', { games: data })
+  });
+});
+
+router.get('/scores', (req, res) => {
+  console.log("get /");
+  db.Games.findAll({}).then(function(data) {
+    console.log('data', data)
+    res.render('scores', { games: data })
+  });
+});
 
 // router.post('/create-game', (req, res) => {
 //   db.Games.create(req.body).then(function(dbGames) {
@@ -13,10 +39,10 @@ router.get('/', (req, res) => res.json('Sample API get endpoint'));
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+// module.exports = function(app) {
 
   // Get all comments
-  app.get("/api/all", function(req, res) {
+  router.get("/api/all", function(req, res) {
 
     // Finding all comments, and then returning them to the user as JSON.
     // Sequelize queries are asynchronous, which helps with perceived speed.
@@ -30,7 +56,7 @@ module.exports = function(app) {
   });
 
   // Add a comment
-  app.post("/api/new", function(req, res) {
+  router.post("/api/new", function(req, res) {
 
     console.log("Comment Data:");
     console.log(req.body);
@@ -46,7 +72,7 @@ module.exports = function(app) {
 
   });
 
-};
+// };
 
 
 
