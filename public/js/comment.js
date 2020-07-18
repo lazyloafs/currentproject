@@ -33,9 +33,6 @@ $("#submit-comment").on("click", function(event) {
     $("#user").val("");
     $("#comment-box").val("");
 
-
-
-
   });
   
   // When the page loads, grab all of our comments
@@ -48,7 +45,7 @@ $("#submit-comment").on("click", function(event) {
         var row = $("<div>");
         row.addClass("comment");
   
-        row.append("<p>" + data[i].author + " commented.. </p>");
+        row.append("<p>" + data[i].author + " commented: </p>");
         row.append("<p>" + data[i].body + "</p>");
         row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
   
