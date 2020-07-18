@@ -57,20 +57,20 @@ router.get('/scores', (req, res) => {
   // });
 
   // // Add a comment
-  // router.post("/scores", function(req, res) {
+  router.post("/scores", function(req, res) {
 
-  //   console.log("Comment Data:");
-  //   console.log(req.body);
+    console.log("Comment Data:");
+    console.log(req.body);
 
-  //   Comments.create({
-  //     author: req.body.author,
-  //     body: req.body.body,
-  //     created_at: req.body.created_at
-  //   }).then(function(results) {
-  //     // `results` here would be the newly created comment
-  //     res.end();
-  //   });
+    newComment.create({
+      author: req.body.author,
+      body: req.body.body,
+      created_at: req.body.created_at
+    }).then(function(results) {
+      // `results` here would be the newly created comment
+      res.end();
+    });
 
-  // });
+  });
 
 module.exports = router;
