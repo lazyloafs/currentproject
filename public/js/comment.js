@@ -14,7 +14,7 @@ $("#submit-comment").on("click", function(event) {
     console.log(newComment);
   
     // Send an AJAX POST-request with jQuery
-    $.post("/api/new", newComment)
+    $.post("/scores", newComment)
       // On success, run the following code
       .then(function() {
   
@@ -38,15 +38,15 @@ $("#submit-comment").on("click", function(event) {
 
   });
   
-  // When the page loads, grab all of our chirps
-  $.get("/api/all", function(data) {
+  // When the page loads, grab all of our comments
+  $.get("/scores", function(data) {
   
     if (data.length !== 0) {
   
       for (var i = 0; i < data.length; i++) {
   
         var row = $("<div>");
-        row.addClass("chirp");
+        row.addClass("comment");
   
         row.append("<p>" + data[i].author + " commented.. </p>");
         row.append("<p>" + data[i].body + "</p>");

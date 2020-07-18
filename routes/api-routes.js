@@ -2,6 +2,7 @@ const router = require('express').Router();
 const comment = require("../models/index.js");
 const db = require('../models/index.js');
 
+console.log("This is comment: ", comment)
 
 
 
@@ -48,7 +49,7 @@ router.get('/scores', (req, res) => {
     // Sequelize queries are asynchronous, which helps with perceived speed.
     // If we want something to be guaranteed to happen after the query, we'll use
     // the .then function
-    comment.findAll({}).then(function(results) {
+    db.Comments.findAll({}).then(function(results) {
       // results are available to us inside the .then
       res.json(results);
     });
@@ -61,7 +62,7 @@ router.get('/scores', (req, res) => {
     console.log("Comment Data:");
     console.log(req.body);
 
-    comment.create({
+    Comments.create({
       author: req.body.author,
       body: req.body.body,
       created_at: req.body.created_at
